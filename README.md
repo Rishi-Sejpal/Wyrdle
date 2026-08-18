@@ -1,4 +1,4 @@
-# ⚡ Wyrdle — Speed Reader
+<img width="1892" height="1007" alt="image" src="https://github.com/user-attachments/assets/65342ea3-1f04-4c19-b409-9a98a030bdbf" />z# ⚡ Wyrdle — Speed Reader
 
 A minimalist web app that turns any PDF into a rapid‑reading session. Upload a PDF, and each word flashes one at a time in the same spot, with the pace automatically accelerating up to **300 WPM**.
 
@@ -27,14 +27,9 @@ Wyrdle/
 
 ## Screenshots
 
-**Dark mode (default)** - CRT-inspired green phosphor theme with monitor bezel, scanlines, and glowing monospace typography. Features a PDF drop zone, word display area, and control panel.
+<img width="1892" height="1007" alt="image" src="https://github.com/user-attachments/assets/6a585573-74c7-429c-8b50-ef363f61aed1" />
 
-**Amber mode** - Toggle the phosphor theme to amber/orange color scheme from the top bar. Switchable via the [ ZEN ] button or `Ctrl+Z` shortcut.
-
-![WORDDASH Speed Reader dark theme](https://raw.githubusercontent.com/rishis/Wyrdle/main/screenshot-dark.png)
-![WORDDASH Speed Reader amber theme](https://raw.githubusercontent.com/rishis/Wyrdle/main/screenshot-amber.png)
-
-*Add screenshots to `screenshots/` folder and update paths above, or replace with ASCII art descriptions of the UI.*
+<img width="1892" height="1007" alt="image" src="https://github.com/user-attachments/assets/9924e19f-6ee0-4857-8615-3e011cdd2784" />
 
 ## Getting started
 
