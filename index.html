@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyrdle · Speed Reader</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#0a0e0a">
+  <meta name="theme-color" content="#0a0e0a">
+</head>
+<body>
+  <div class="monitor">
+    <div class="screen">
+      <header class="topbar">
+<div class="logo">
+          <img src="favicons/favicon-32x32.png" alt="SPEEDREADER" width="24" height="24" class="logo-img">
+          <span class="logo-name">SPEEDREADER v1.0</span>
+        </div>
+        <button class="keycap" id="zen-btn" type="button" disabled>[ ZEN ]</button>
+      </header>
+
+      <main class="stage">
+        <section class="upload" id="upload-view">
+          <div class="drop-zone" id="drop-zone">
+            <p class="sys-line">&gt; awaiting upload<span class="cursor">█</span></p>
+            <p class="hint">drag pdf into this sector, or press the button below</p>
+            <button class="btn primary" id="browse-btn" type="button">[ BROWSE ]</button>
+            <span class="limit">MAX SIZE: 10MB</span>
+            <input type="file" accept=".pdf" id="file-input">
+          </div>
+
+          <div class="about">
+            <h3>// system guide</h3>
+            <div class="steps">
+              <div class="step">
+                <span class="step-num">01</span>
+                <p>drop in a pdf &mdash; parsed instantly</p>
+              </div>
+              <div class="step">
+                <span class="step-num">02</span>
+                <p>set start page &amp; base pace</p>
+              </div>
+              <div class="step">
+                <span class="step-num">03</span>
+                <p>words flash one by one, up to 300 wpm</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reader" id="reader-view" hidden>
+          <div class="reader-stats">
+            <span>PAGE:<b id="page-display">01</b></span>
+            <span>WPM:<b id="wpm-display">150</b></span>
+            <span>PROG:<b id="progress-display">0%</b></span>
+          </div>
+          <div class="word-stage"><span id="word"></span></div>
+          <div class="progress"><div id="progress-bar"></div></div>
+          <div class="zen-hint" id="zen-hint" hidden>SPACE = PAUSE &middot; ESC = EXIT</div>
+          <div class="controls">
+            <div class="field">
+              <label for="start-page">start page</label>
+              <input type="number" id="start-page" min="1" value="1">
+            </div>
+            <div class="field">
+              <label for="speed-slider">base speed</label>
+              <input type="range" id="speed-slider" min="150" max="300" step="1" value="150">
+            </div>
+            <button class="btn primary" id="start-btn" disabled>[ START ]</button>
+            <button class="btn ghost" id="pause-btn" disabled>[ PAUSE ]</button>
+            <button class="btn ghost" id="stop-btn" disabled>[ STOP ]</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="loading" hidden>
+    <div class="spinner"><span id="spinner-char">|</span></div>
+    <span class="sys-line">&gt; parsing pdf...</span>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
