@@ -1,4 +1,4 @@
-<img width="1892" height="1007" alt="image" src="https://github.com/user-attachments/assets/65342ea3-1f04-4c19-b409-9a98a030bdbf" />z# ⚡ Wyrdle — Speed Reader
+<img width="192" height="192" alt="image" src="https://github.com/user-attachments/assets/9d9043dc-540b-4bf8-b245-ff94245a561f" />
 
 A minimalist web app that turns any PDF into a rapid‑reading session. Upload a PDF, and each word flashes one at a time in the same spot, with the pace automatically accelerating up to **300 WPM**.
 
