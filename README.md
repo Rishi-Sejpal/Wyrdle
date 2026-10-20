@@ -2,6 +2,8 @@
 
 A minimalist web app that turns any PDF into a rapid‑reading session. Upload a PDF, and each word flashes one at a time in the same spot, with the pace automatically accelerating up to **300 WPM**.
 
+Hosted On Github Pages - https://rishi-sejpal.github.io/Wyrdle/
+
 ## Features
 
 - **PDF upload** via drag‑and‑drop or click (max **10 MB**)
